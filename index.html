@@ -1,0 +1,620 @@
+
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#f8f3e9">
+  <meta name="description" content="Te invito a celebrar mis XV años. Acompáñame en este día tan especial.">
+
+ <title>Mis XV Años | Sofía</title>
+
+<meta property="og:title"
+      content="Mis XV Años | Sofía">
+
+<meta property="og:description"
+      content="Te invito a celebrar mis XV años este 20 de noviembre de 2027.">
+  
+  
+  <meta property="og:type" content="website">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- JavaScript -->
+
+
+
+
+<script defer src="script.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="locked">
+
+  <!-- SOBRE INTERACTIVO -->
+  <div id="pantallaInicio" class="splash-screen">
+
+    <div class="gate gate-left"></div>
+    <div class="gate gate-right"></div>
+
+    <div class="envelope-intro">
+      <p class="overline">MODELO DE DEMOSTRACIÓN · AF DIGITALES</p>
+
+      <h2>Mis XV Años</h2>
+      <p class="splash-name">Sofía</p>
+
+      <div class="decorative-divider">✦ ❦ ✦</div>
+
+      <button id="btnAbrir" class="seal" type="button">
+        <span class="seal-initial">S</span>
+        <span class="seal-text">TOCA PARA ABRIR</span>
+      </button>
+
+      <p class="splash-footer">20 · NOVIEMBRE · 2027</p>
+    </div>
+
+  </div>
+
+  <!-- MÚSICA -->
+  <audio id="musicaFondo" loop preload="none">
+     <!-- Agrega aquí un archivo de música autorizado para tu demo. -->
+  </audio>
+
+  <button
+    id="btn-audio"
+    class="floating-btn"
+    type="button"
+    aria-label="Activar o pausar música"
+    hidden>
+    <i class="fas fa-volume-xmark"></i>
+  </button>
+
+  <!-- INVITACIÓN -->
+  <main id="contenidoInvitacion" class="invitation-container" hidden>
+
+    <!-- PORTADA -->
+    <header class="hero-section">
+
+      <img
+        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%221000%22%20viewBox%3D%220%200%20800%201000%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23e9e1ca%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2371866f%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%221000%22%20fill%3D%22url%28%23g%29%22%2F%3E%3Crect%20x%3D%2235%22%20y%3D%2235%22%20width%3D%22730%22%20height%3D%22930%22%20rx%3D%22180%22%20fill%3D%22none%22%20stroke%3D%22%23e4d3a6%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%22380%22%20text-anchor%3D%22middle%22%20fill%3D%22%23405643%22%20font-family%3D%22Georgia%22%20font-size%3D%22100%22%3E%E2%9D%A6%3C%2Ftext%3E%3Ctext%20x%3D%22400%22%20y%3D%22470%22%20text-anchor%3D%22middle%22%20fill%3D%22%23405643%22%20font-family%3D%22Georgia%22%20font-size%3D%2232%22%3EFotograf%C3%ADa%20de%20ejemplo%201%3C%2Ftext%3E%3C%2Fsvg%3E"
+        alt="Ilustración decorativa de ejemplo"
+        class="hero-img"
+        fetchpriority="high">
+
+      <div class="hero-overlay">
+
+        <p class="hero-pretitle">
+          TE INVITO A CELEBRAR
+        </p>
+
+        <p class="hero-script">Mis</p>
+
+        <h2 class="hero-xv">XV</h2>
+
+        <p class="hero-script">Años</p>
+
+        <div class="hero-ornament">✧ ❦ ✧</div>
+
+        <h1 class="names">Sofía</h1>
+
+        <p class="hero-date">
+          20 · NOVIEMBRE · 2027
+        </p>
+
+      </div>
+
+      <div class="hero-scroll">
+        <span>DESCUBRE MI INVITACIÓN</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+
+    </header>
+
+    <!-- MENSAJE DE BIENVENIDA -->
+    <section class="intro-section fade-in">
+
+      <span class="section-symbol">✦</span>
+
+      <p class="intro-script">
+        Hay momentos que se convierten en recuerdos para toda la vida...
+      </p>
+
+      <p class="intro-text">
+        Me encantaria que formaras parte de uno de los mas especiales para mi.
+      </p>
+
+      <p class="intro-highlight">
+        ¡Te invito a celebrar conmigo mis XV años!
+      </p>
+
+      <div class="floral-divider">❦</div>
+
+    </section>
+
+    <!-- FECHA -->
+    <section class="date-section fade-in">
+
+      <p class="section-kicker">UN DÍA PARA RECORDAR</p>
+      <h2 class="section-title">La Fecha</h2>
+      <div class="ornamental-line"></div>
+
+      <div class="date-display">
+
+        <span class="date-side">SÁBADO</span>
+
+        <div class="date-center">
+          <span class="big-date">20</span>
+          <span class="date-month">NOVIEMBRE</span>
+        </div>
+
+        <span class="date-side">2027</span>
+
+      </div>
+
+      <div id="miniCalendar" class="mini-calendar"></div>
+
+      <div class="photo-space">
+        <img
+          src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%221000%22%20viewBox%3D%220%200%20800%201000%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23e9e1ca%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2371866f%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%221000%22%20fill%3D%22url%28%23g%29%22%2F%3E%3Crect%20x%3D%2235%22%20y%3D%2235%22%20width%3D%22730%22%20height%3D%22930%22%20rx%3D%22180%22%20fill%3D%22none%22%20stroke%3D%22%23e4d3a6%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%22380%22%20text-anchor%3D%22middle%22%20fill%3D%22%23405643%22%20font-family%3D%22Georgia%22%20font-size%3D%22100%22%3E%E2%9D%A6%3C%2Ftext%3E%3Ctext%20x%3D%22400%22%20y%3D%22470%22%20text-anchor%3D%22middle%22%20fill%3D%22%23405643%22%20font-family%3D%22Georgia%22%20font-size%3D%2232%22%3EFotograf%C3%ADa%20de%20ejemplo%202%3C%2Ftext%3E%3C%2Fsvg%3E"
+          alt="Ilustración decorativa de ejemplo"
+          loading="lazy">
+      </div>
+
+    </section>
+
+    <!-- CUENTA REGRESIVA -->
+    <section class="countdown-section fade-in">
+
+      <p class="section-kicker">EL GRAN DÍA SE ACERCA</p>
+      <h2 class="section-title">Faltan</h2>
+
+      <div class="ornamental-line"></div>
+
+      <div id="countdown" class="timer-grid">
+
+        <div class="timer-item">
+          <strong id="dias">00</strong>
+          <span>DÍAS</span>
+        </div>
+
+        <div class="timer-item">
+          <strong id="horas">00</strong>
+          <span>HORAS</span>
+        </div>
+
+        <div class="timer-item">
+          <strong id="minutos">00</strong>
+          <span>MINUTOS</span>
+        </div>
+
+        <div class="timer-item">
+          <strong id="segundos">00</strong>
+          <span>SEGUNDOS</span>
+        </div>
+
+      </div>
+
+      <p id="countdownMessage" class="countdown-message">
+        Cada segundo nos acerca a un día inolvidable.
+      </p>
+
+    </section>
+
+    <!-- PADRES -->
+    <section class="parents-section fade-in">
+
+      <div class="section-icon">
+        <i class="fa-solid fa-heart"></i>
+      </div>
+
+      <p class="section-kicker">CON SU AMOR Y BENDICIÓN</p>
+      <h2 class="section-title">Mis Padres</h2>
+
+      <div class="ornamental-line"></div>
+
+      <p class="parents-intro">
+       Con la bendición de Dios y de mis padres. <br>
+          Me siento feliz de llegar a este momento de mi vida. <br>
+          El dia que dejare atrás mi infancia y comenzaré un nuevo viaje.
+      </p>
+
+      <div class="parents-names">
+        <p>Nombre de mamá</p>
+        <span>&</span>
+        <p>Nombre de papá</p>
+      </div>
+
+      <p class="blessing-text">
+        Gracias por hacer posible este sueño.
+      </p>
+
+    </section>
+
+<!-- FOTOGRAFÍA ENTRE PADRES Y PADRINOS -->
+<section class="between-family-photo">
+
+  <img
+    src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%221000%22%20viewBox%3D%220%200%20800%201000%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23e9e1ca%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2371866f%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%221000%22%20fill%3D%22url%28%23g%29%22%2F%3E%3Crect%20x%3D%2235%22%20y%3D%2235%22%20width%3D%22730%22%20height%3D%22930%22%20rx%3D%22180%22%20fill%3D%22none%22%20stroke%3D%22%23e4d3a6%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%22380%22%20text-anchor%3D%22middle%22%20fill%3D%22%23405643%22%20font-family%3D%22Georgia%22%20font-size%3D%22100%22%3E%E2%9D%A6%3C%2Ftext%3E%3Ctext%20x%3D%22400%22%20y%3D%22470%22%20text-anchor%3D%22middle%22%20fill%3D%22%23405643%22%20font-family%3D%22Georgia%22%20font-size%3D%2232%22%3EFotograf%C3%ADa%20de%20ejemplo%203%3C%2Ftext%3E%3C%2Fsvg%3E"
+    alt="Ilustración decorativa de ejemplo"
+    loading="lazy"
+  >
+
+</section>
+
+
+    <!-- PADRINOS -->
+    <section class="padrinos-section fade-in">
+
+      <div class="section-icon">
+        <i class="fa-solid fa-crown"></i>
+      </div>
+
+      <p class="section-kicker">PERSONAS MUY ESPECIALES</p>
+      <h2 class="section-title">Mis Padrinos</h2>
+
+      <div class="ornamental-line"></div>
+
+      <p class="padrinos-intro">
+        Unos padrinos no se encuentran,
+        se eligen con el corazón.
+      </p>
+
+      <div class="padrinos-grid">
+
+        <!-- PAREJA 1 -->
+        <article class="padrino-card">
+          <i class="fa-solid fa-heart padrino-icon"></i>
+          <p class="padrino-label">PADRINO</p>
+          <h3>Nombre del padrino</h3>
+          <div class="card-ornament">❦</div>
+        </article>
+
+        <article class="padrino-card">
+          <i class="fa-solid fa-heart padrino-icon"></i>
+          <p class="padrino-label">MADRINA</p>
+          <h3>Nombre de la madrina</h3>
+          <div class="card-ornament">❦</div>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- CARRUSEL DE FOTOGRAFÍAS -->
+    <section class="gallery-section fade-in">
+
+      <p class="section-kicker">RECUERDOS INOLVIDABLES</p>
+      <h2 class="section-title">Un Poco de Mi Historia</h2>
+
+      <div class="ornamental-line"></div>
+
+      <p class="gallery-description">
+        Momentos que forman parte de este hermoso sueño.
+      </p>
+
+      <div class="carousel" aria-label="Galería de fotografías">
+
+        <div class="carousel-viewport" id="carouselViewport">
+
+          <div class="carousel-track" id="carouselTrack">
+
+            <div class="carousel-slide">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%221000%22%20viewBox%3D%220%200%20800%201000%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23e9e1ca%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2371866f%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%221000%22%20fill%3D%22url%28%23g%29%22%2F%3E%3Crect%20x%3D%2235%22%20y%3D%2235%22%20width%3D%22730%22%20height%3D%22930%22%20rx%3D%22180%22%20fill%3D%22none%22%20stroke%3D%22%23e4d3a6%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%22380%22%20text-anchor%3D%22middle%22%20fill%3D%22%23405643%22%20font-family%3D%22Georgia%22%20font-size%3D%22100%22%3E%E2%9D%A6%3C%2Ftext%3E%3Ctext%20x%3D%22400%22%20y%3D%22470%22%20text-anchor%3D%22middle%22%20fill%3D%22%23405643%22%20font-family%3D%22Georgia%22%20font-size%3D%2232%22%3EFotograf%C3%ADa%20de%20ejemplo%204%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Ilustración decorativa de ejemplo" loading="lazy">
+            </div>
+
+            <div class="carousel-slide">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%221000%22%20viewBox%3D%220%200%20800%201000%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23e9e1ca%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2371866f%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%221000%22%20fill%3D%22url%28%23g%29%22%2F%3E%3Crect%20x%3D%2235%22%20y%3D%2235%22%20width%3D%22730%22%20height%3D%22930%22%20rx%3D%22180%22%20fill%3D%22none%22%20stroke%3D%22%23e4d3a6%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%22380%22%20text-anchor%3D%22middle%22%20fill%3D%22%23405643%22%20font-family%3D%22Georgia%22%20font-size%3D%22100%22%3E%E2%9D%A6%3C%2Ftext%3E%3Ctext%20x%3D%22400%22%20y%3D%22470%22%20text-anchor%3D%22middle%22%20fill%3D%22%23405643%22%20font-family%3D%22Georgia%22%20font-size%3D%2232%22%3EFotograf%C3%ADa%20de%20ejemplo%205%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Ilustración decorativa de ejemplo" loading="lazy">
+            </div>
+
+            <div class="carousel-slide">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%221000%22%20viewBox%3D%220%200%20800%201000%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23e9e1ca%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2371866f%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%221000%22%20fill%3D%22url%28%23g%29%22%2F%3E%3Crect%20x%3D%2235%22%20y%3D%2235%22%20width%3D%22730%22%20height%3D%22930%22%20rx%3D%22180%22%20fill%3D%22none%22%20stroke%3D%22%23e4d3a6%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%22380%22%20text-anchor%3D%22middle%22%20fill%3D%22%23405643%22%20font-family%3D%22Georgia%22%20font-size%3D%22100%22%3E%E2%9D%A6%3C%2Ftext%3E%3Ctext%20x%3D%22400%22%20y%3D%22470%22%20text-anchor%3D%22middle%22%20fill%3D%22%23405643%22%20font-family%3D%22Georgia%22%20font-size%3D%2232%22%3EFotograf%C3%ADa%20de%20ejemplo%206%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Ilustración decorativa de ejemplo" loading="lazy">
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <button
+          id="carouselPrev"
+          class="carousel-btn carousel-prev"
+          type="button"
+          aria-label="Fotografía anterior">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <button
+          id="carouselNext"
+          class="carousel-btn carousel-next"
+          type="button"
+          aria-label="Fotografía siguiente">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+      </div>
+
+      <div id="carouselDots" class="carousel-dots"></div>
+
+    </section>
+
+    <!-- ITINERARIO -->
+    <section class="timeline-section fade-in">
+
+      <p class="section-kicker">ACOMPÁÑAME A CELEBRAR</p>
+      <h2 class="section-title">Itinerario</h2>
+
+      <div class="ornamental-line"></div>
+
+      <div class="timeline-list">
+
+        <!-- CEREMONIA -->
+        <article class="timeline-item">
+
+          <div class="timeline-marker">
+            <i class="fa-solid fa-church"></i>
+          </div>
+
+          <div class="timeline-content">
+
+            <p class="timeline-hour">4:00 PM</p>
+            <h3>Ceremonia Religiosa</h3>
+
+            <div class="timeline-small-line"></div>
+
+            <p class="place-name">
+              Parroquia de ejemplo
+            </p>
+
+            <p class="place-address">Dirección de ejemplo · Ubicación por definir</p>
+
+            <a
+              href="https://www.google.com/maps/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline">
+              <i class="fa-solid fa-location-dot"></i>
+              VER UBICACIÓN
+            </a>
+
+          </div>
+
+        </article>
+
+        <!-- RECEPCIÓN -->
+        <article class="timeline-item">
+
+          <div class="timeline-marker">
+            <i class="fa-solid fa-champagne-glasses"></i>
+          </div>
+
+          <div class="timeline-content">
+
+            <p class="timeline-hour">6:00 PM</p>
+            <h3>Recepción</h3>
+
+            <div class="timeline-small-line"></div>
+
+            <p class="place-name">
+              Salón de eventos de ejemplo
+            </p>
+
+            <p class="place-address">Dirección de ejemplo · Ubicación por definir</p>
+
+            <a
+              href="https://www.google.com/maps/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline">
+              <i class="fa-solid fa-location-dot"></i>
+              VER UBICACIÓN
+            </a>
+
+          </div>
+
+        </article>
+          
+          
+<!-- CENA -->
+<article class="timeline-item">
+
+  <div class="timeline-marker">
+    <i class="fa-solid fa-utensils"></i>
+  </div>
+
+  <div class="timeline-content">
+
+    <p class="timeline-hour">
+      7:30 PM
+    </p>
+
+    <h3>Cena</h3>
+
+    <div class="timeline-small-line"></div>
+
+  </div>
+
+</article>
+
+          
+<!-- BAILE Y FIESTA -->
+<article class="timeline-item">
+
+  <div class="timeline-marker">
+    <i class="fa-solid fa-music"></i>
+  </div>
+
+  <div class="timeline-content">
+
+    <p class="timeline-hour">
+      9:00 PM EN ADELANTE
+    </p>
+
+    <h3>Baile </h3>
+
+    <div class="timeline-small-line"></div>
+
+
+
+  </div>
+
+</article>
+
+
+      </div>
+
+      <div class="photo-space">
+        <img
+          src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%221000%22%20viewBox%3D%220%200%20800%201000%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23e9e1ca%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2371866f%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%221000%22%20fill%3D%22url%28%23g%29%22%2F%3E%3Crect%20x%3D%2235%22%20y%3D%2235%22%20width%3D%22730%22%20height%3D%22930%22%20rx%3D%22180%22%20fill%3D%22none%22%20stroke%3D%22%23e4d3a6%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%22380%22%20text-anchor%3D%22middle%22%20fill%3D%22%23405643%22%20font-family%3D%22Georgia%22%20font-size%3D%22100%22%3E%E2%9D%A6%3C%2Ftext%3E%3Ctext%20x%3D%22400%22%20y%3D%22470%22%20text-anchor%3D%22middle%22%20fill%3D%22%23405643%22%20font-family%3D%22Georgia%22%20font-size%3D%2232%22%3EFotograf%C3%ADa%20de%20ejemplo%207%3C%2Ftext%3E%3C%2Fsvg%3E"
+          alt="Ilustración decorativa de ejemplo"
+          loading="lazy">
+      </div>
+
+    </section>
+
+    <!-- VESTIMENTA -->
+    <section class="dresscode-section fade-in">
+
+      <div class="section-icon">
+        <i class="fa-solid fa-user-tie"></i>
+      </div>
+
+      <p class="section-kicker">PARA ESTA OCASIÓN ESPECIAL</p>
+      <h2 class="section-title">Código de Vestimenta</h2>
+
+      <div class="ornamental-line"></div>
+
+
+
+      <div class="dresscode-decoration">
+        <i class="fa-solid fa-gem"></i>
+      </div>
+
+      <p class="dresscode-warning">
+        Te agradezco reservar el color del vestido
+        de la quinceañera para esta ocasión.
+      </p>
+
+    </section>
+
+    <!-- REGALOS -->
+    <section class="gifts-section fade-in">
+
+      <div class="section-icon">
+        <i class="fa-solid fa-gift"></i>
+      </div>
+
+      <p class="section-kicker">UN DETALLE ESPECIAL</p>
+      <h2 class="section-title">Lluvia de Sobres</h2>
+
+      <div class="ornamental-line"></div>
+
+      <p class="gifts-text">
+        Tu presencia es el regalo más bonito.
+        Si deseas obsequiarme un detalle,
+        puedes hacerlo mediante un sobre
+        con mucho cariño.
+      </p>
+
+      <div class="gift-envelope">
+        <i class="fa-regular fa-envelope-open"></i>
+      </div>
+
+      <p class="gifts-signature">Con cariño, Sofía</p>
+
+    </section>
+
+    <!-- CONFIRMACIÓN POR WHATSAPP -->
+    <section class="rsvp-section fade-in">
+
+      <div class="section-icon">
+        <i class="fa-solid fa-envelope-circle-check"></i>
+      </div>
+
+      <p class="section-kicker">ME ENCANTARÍA CONTAR CONTIGO</p>
+      <h2 class="section-title">Confirmación</h2>
+
+      <div class="ornamental-line"></div>
+
+      <p class="rsvp-description">Confirma tu asistencia por WhatsApp. Esta invitación es un modelo de demostración y no corresponde a un evento real.</p>
+
+      <form id="formularioRSVP" class="rsvp-form">
+
+        <label for="nombreInvitado">
+          Nombre completo
+        </label>
+
+        <input
+          type="text"
+          id="nombreInvitado"
+          maxlength="80"
+          placeholder="Escribe tu nombre"
+          autocomplete="name"
+          required>
+
+        <label for="pasesAsistencia">
+          Número de personas
+        </label>
+
+        <input
+          type="number"
+          id="pasesAsistencia"
+          min="1"
+          max="5"
+          placeholder="Ejemplo: 2"
+          required>
+
+        <button type="submit" class="btn-solid">
+          <i class="fa-brands fa-whatsapp"></i>
+          CONFIRMAR POR WHATSAPP
+        </button>
+
+      </form>
+
+      <p id="estadoRSVP" class="form-status" role="status"></p>
+
+      </section>
+
+    <!-- DESPEDIDA -->
+    <section class="farewell-section fade-in">
+
+      <img
+        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%221000%22%20viewBox%3D%220%200%20800%201000%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23e9e1ca%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2371866f%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%221000%22%20fill%3D%22url%28%23g%29%22%2F%3E%3Crect%20x%3D%2235%22%20y%3D%2235%22%20width%3D%22730%22%20height%3D%22930%22%20rx%3D%22180%22%20fill%3D%22none%22%20stroke%3D%22%23e4d3a6%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%22380%22%20text-anchor%3D%22middle%22%20fill%3D%22%23405643%22%20font-family%3D%22Georgia%22%20font-size%3D%22100%22%3E%E2%9D%A6%3C%2Ftext%3E%3Ctext%20x%3D%22400%22%20y%3D%22470%22%20text-anchor%3D%22middle%22%20fill%3D%22%23405643%22%20font-family%3D%22Georgia%22%20font-size%3D%2232%22%3EFotograf%C3%ADa%20de%20ejemplo%208%3C%2Ftext%3E%3C%2Fsvg%3E"
+        alt="Ilustración decorativa de ejemplo"
+        loading="lazy">
+
+      <div class="farewell-overlay">
+
+        <p>Gracias por acompañarme</p>
+
+        <h2>Sofía</h2>
+
+        <span>UN DÍA QUE VIVIRÁ POR SIEMPRE</span>
+
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="footer-ornament">❦</div>
+
+      <p>Hecho con amor para un día inolvidable</p>
+
+      <small>
+        Diseño exclusivo · AF Digitales
+      </small>
+    </footer>
+
+  </main>
+
+</body>
+</html>
